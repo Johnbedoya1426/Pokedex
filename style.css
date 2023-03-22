@@ -144,11 +144,11 @@ table {
   font-family: "Poppins";
   font-style: normal;
 }
-.title-container {
+.title {
   display: flex;
   padding: 1.5rem 2rem;
 }
-.title-container img {
+.title__img {
   left: 0.51px;
   right: 0.51px;
   top: 0;
@@ -156,7 +156,7 @@ table {
   cursor: pointer;
 }
 
-.title-container h1 {
+.title__text {
   color: #fff;
   width: 106px;
   height: 32px;
@@ -167,7 +167,7 @@ table {
   cursor: pointer;
 }
 /* SEARCH CONTAINER */
-.search-container {
+.search {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -179,7 +179,7 @@ table {
   order: 0;
   flex-grow: 1;
 }
-.search-sort {
+.sort {
   display: flex;
   box-shadow: inset 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
   border-radius: 50%;
@@ -189,15 +189,15 @@ table {
   justify-content: center;
   cursor: pointer;
 }
-.search-sort button {
+.sort button {
   justify-content: center;
   cursor: pointer;
 }
-.search-container button {
+.search button {
   border: none;
   background-color: transparent;
 }
-.search-button-container {
+.search__container-button {
   display: flex;
   align-items: center;
   width: 100%;
@@ -207,25 +207,25 @@ table {
   border-radius: 16px;
   padding: 0.5rem 0rem;
 }
-.search-button-container input {
+.search__text {
   width: 100%;
   border: none;
   background: transparent;
   padding: 0rem 2rem;
   outline: none;
 }
-.search-button img {
+.search__button__img {
   padding-left: 10px;
   padding-top: 5px;
   justify-content: center;
   cursor: pointer;
 }
 /* GRID  */
-.container-grip {
+.grip {
   max-width: 1400px;
   margin: auto;
 }
-.grid-container {
+.grid__container {
   background-color: #fff;
   margin: 2rem 1rem;
   padding: 3rem 2rem;
@@ -236,7 +236,7 @@ table {
   flex-wrap: wrap;
 }
 /* CARD POKEMON */
-.card-pokemon {
+.card__pokemon {
   width: 9rem;
   box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -254,12 +254,12 @@ table {
   padding-top: 0.5rem;
   margin-bottom: 3rem;
 }
-.card-pokemon:hover {
+.card__pokemon:hover {
   filter: brightness(1.1);
   cursor: pointer;
   transform: scale(1.05);
 }
-.card-pokemon h2 {
+.card-pokemon__name {
   justify-content: center;
   font-size: 20px;
   line-height: 16px;
@@ -270,33 +270,33 @@ table {
   padding-bottom: 1rem;
 }
 
-.card-pokemon p {
+.card-pokemon__number {
   display: flex;
   justify-content: end;
   margin-right: 5px;
   padding-bottom: 1rem;
 }
 
-.container-img {
+.card__image-container {
   display: flex;
   justify-content: center;
   padding-bottom: 1rem;
 }
 /* 
 CARD INFORMATION CSS */
-#card-information {
+#card__pokemon-information {
   background-color: darkgray;
   font-family: "Poppins";
   font-style: normal;
   padding: 0 12px;
 }
-.card-information-container {
+.card-information__title-container {
   display: flex;
   text-align: center;
   width: 100%;
 }
 /* TITLE CONTAINER CARD INFORMATION */
-.title-container-card {
+.card-information__title {
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -305,10 +305,10 @@ CARD INFORMATION CSS */
   align-items: center;
 }
 
-.title-container-card img {
+.card-information__title__img {
   cursor: pointer;
 }
-.title-container-card h1 {
+.card-information__title__text {
   padding: 0 20px;
   display: flex;
   justify-content: center;
@@ -317,51 +317,51 @@ CARD INFORMATION CSS */
   line-height: 32px;
 }
 
-.title-container-card p {
+.card-information__title__number {
   font-size: 16px;
 }
 /* IMAGES CONTAINER */
-.images-container {
+.card-information__images-container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.images-container .previus-button {
+.button__previus {
   background-color: transparent;
   cursor: pointer;
   margin-right: 58px;
   border: none;
 }
 
-.images-container .next-button {
+.button__next {
   background-color: transparent;
   cursor: pointer;
   margin-left: 58px;
   border: none;
 }
-.images-container img {
+.button img {
   cursor: pointer;
 }
-.images-container img:hover {
+.button img:hover {
   filter: brightness(1.1);
   cursor: pointer;
   transform: scale(1.05);
 }
 /* INFORMATION CONTAINER */
-.information-container {
+.card-information__button {
   background-color: #fff;
   margin: -49px 0px;
   border-radius: 16px;
   box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
-.button-type-container {
+.button-information__container {
   display: flex;
   justify-content: center;
   padding-top: 60px;
 }
-.type-button {
+.button-information__type {
   margin: 0 10px;
   width: 50px;
   border-radius: 16px;
@@ -371,86 +371,86 @@ CARD INFORMATION CSS */
   cursor: pointer;
   border: none;
 }
-.information-about {
+.card-information__about {
   display: flex;
   justify-content: center;
   color: #b8b8b8;
   margin-top: 30px;
 }
-.information-about h1 {
+.card-about__text {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
 }
 /* INFORMATION DESCRIPTION */
-.information-description {
+.card-information__description {
   display: flex;
   margin-top: 20px;
   width: 100%;
   justify-content: center;
 }
 
-.weight-information {
+.description-weight {
   margin: 0 30px;
 }
-.description-organize {
+.description__container {
   display: flex;
   display: inline-flex;
   margin-bottom: 38px;
 }
-.description-organize img {
+.description__image {
   margin-right: 10px;
 }
-.description-organize p {
+.description__number {
   font-size: 12px;
   justify-content: center;
   color: #666666;
 }
-.information-description h2 {
+.description__title {
   color: #b8b8b8;
   display: flex;
   justify-content: center;
 }
-.height-information {
+.description-height{
   border-left: 2px solid #b8b8b8;
   border-right: 2px solid #b8b8b8;
   padding: 0px 30px;
 }
 
-.moves-information {
+.description__moves {
   margin: 0 25px;
 }
 
-.moves-information h2 {
+.description-moves__tittle {
   margin-top: 20px;
   font-size: 16px;
 }
-.description-pokemon {
+.card-information__details-pokemon {
   display: flex;
   margin: 30px 24px;
   justify-content: center;
 }
-.description-pokemon p {
+.details-pokemon__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
 }
 
 /* BASE STATS */
-.base-stats-container {
+.card-information__base-stats {
   display: flex;
   justify-content: center;
   margin-top: 40px;
 }
-.base-stats-container h1 {
+.base-stats__title {
   color: #b8b8b8;
 }
-.stats-container {
+.base-stats__container {
   width: 100%;
   display: flex;
   display: inline-flex;
 }
-.stats {
+.stats__information {
   margin-left: 30px;
   margin-top: 30px;
   margin-bottom: 3rem;
@@ -458,15 +458,15 @@ CARD INFORMATION CSS */
   border-right: 2px solid #b8b8b8;
   padding-right: 2rem;
 }
-.stats h3 {
+.stat__attribute{
   margin-top: 6px;
 }
-.stats-information {
+.stats-information__range {
   margin-top: 30px;
   margin-bottom: 3rem;
   margin-left: 30px;
 }
-.stats-information p {
+.stats__range {
   margin-top: 6px;
 }
 .progress {
